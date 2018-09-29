@@ -1,0 +1,32 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__.'\vendor\autoload.php';
+
+use legion112\brackets\ValidatorBracket;
+function main(array $argv): void {
+    $a = 0;
+    if(count($argv)<=1) {
+        echo 'Usage: check /path/to/file';
+    }
+
+    $fileName = $argv[1];
+    if (!file_exists($fileName) || !is_readable($fileName)){
+        throw new \InvalidArgumentException("Cannot read file: $fileName");
+    }
+
+    $file = fopen($fileName, 'r');
+    $parser = new ValidatorBracket();
+    while(!feof($file)){
+        $line = trim(fgets($file));
+
+        try{
+            $result = $parser->parse($line);
+            echo "Test for \"$line" . ($result ? "Ok" : "FAIL") . PHP_EOL;
+        }catch (\InvalidArgumentException $e) {
+            echo "Exception was thrown on line \"$line\" with message: {$e->getMessage()}";
+        }
+    }
+    fclose($file);
+}
+
+main($argv);

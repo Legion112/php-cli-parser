@@ -1,0 +1,50 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "7abf65dac607f1883e5b8d1e12947e20",
+    "packages": [
+        {
+            "name": "legion112/brackets",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Legion112/brackets.git",
+                "reference": "2fcd5b22936c0f3f0144f2dace25aac5296ffe70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Legion112/brackets/zipball/2fcd5b22936c0f3f0144f2dace25aac5296ffe70",
+                "reference": "2fcd5b22936c0f3f0144f2dace25aac5296ffe70",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "legion112\\brackets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Max",
+                    "email": "ageev.maks2014@gmail.com"
+                }
+            ],
+            "time": "2018-09-29T14:15:56+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

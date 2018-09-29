@@ -1,0 +1,13 @@
+{
+    "name": "max/bracketapp",
+    "type": "project",
+    "require": {
+        "legion112/brackets": "^0.0.4"
+    },
+    "authors": [
+        {
+            "name": "Max",
+            "email": "ageev.maks2014@gmail.com"
+        }
+    ]
+}
